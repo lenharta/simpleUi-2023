@@ -1,12 +1,17 @@
+import { useContext } from "react";
 import "./App.css";
-import { Button } from "./lib";
+import ThemeContext from "./app/theme/ThemeContext";
+import { Button, Welcome } from "./lib";
 
 function App() {
+  const [theme, setTheme] = useContext(ThemeContext)!;
+  console.log(theme);
+
   return (
     <div className="App">
-      <h1 className="Title">Vite + React</h1>
       <div className="card">
-        <p className="Text">Change Theme Mode</p>
+        <Welcome text="Welcome to your React App!" />
+
         <Button />
       </div>
     </div>
