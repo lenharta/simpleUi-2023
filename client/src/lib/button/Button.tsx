@@ -12,7 +12,7 @@ const Button = ({
   text = "Button Text",
   type = "button",
   value = "",
-  onClick = () => console.log("You clicked a button!"),
+  onClick,
   disabled = false,
 }: ButtonPropsType) => {
   return (
@@ -21,7 +21,7 @@ const Button = ({
       type={type}
       value={value}
       onClick={onClick}
-      className="Button"
+      className="text-size-0 Button"
       disabled={disabled}
     >
       {text}

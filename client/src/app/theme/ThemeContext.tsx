@@ -1,6 +1,7 @@
 import { createContext } from "react";
 import { ThemeStoreReturnType, useThemeStore } from "../hooks/useThemeStore";
 
+// should use hook or reduce state (clarify which one is faster).
 const ThemeContext = createContext({} as ThemeStoreReturnType);
 
 export const ThemeContextProvider = ({
@@ -17,6 +18,54 @@ export const ThemeContextProvider = ({
 };
 
 export default ThemeContext;
+
+const ROUTER_DATA = {
+  home: {
+    path: "/",
+    title: "SimpleUi | Home",
+    id: "home-page-id",
+    seo: {
+      title: "SimpleUi | Home",
+      decription: "insert component library description.",
+    },
+  },
+  about: {
+    path: "/about",
+    title: "SimpleUi | About",
+    id: "about-page-id",
+    seo: {
+      title: "SimpleUi | About",
+      decription: "insert component library description.",
+    },
+  },
+  pricing: {
+    path: "/pricing",
+    title: "SimpleUi | Plans & Pricing",
+    id: "about-page-id",
+    seo: {
+      title: "SimpleUi | Plans & Pricing",
+      decription: "insert component library description.",
+    },
+  },
+  library: {
+    path: "/library",
+    title: "SimpleUi | Library",
+    id: "library-page-id",
+    seo: {
+      title: "SimpleUi | Library",
+      decription: "insert component library description.",
+    },
+  },
+  contact: {
+    path: "/contact",
+    title: "SimpleUi | Contact",
+    id: "contact-page-id",
+    seo: {
+      title: "SimpleUi | Contact",
+      decription: "insert component library description.",
+    },
+  },
+};
 
 // interface State<T> {
 //   data?: T
