@@ -66,13 +66,16 @@
   --fsz-10: 3.375rem;
   --fsz-11: 3.675rem;
   --fsz-12: 3.875rem;
+  --fsz-13: 4.125rem;
+  --fsz-14: 4.375rem;
+  --fsz-15: 4.675rem;
 
-  --gap-1: var(--bsz);
-  --gap-2: calc(var(--bsz) * 2);
-  --gap-3: calc(var(--bsz) * 3);
-  --gap-4: calc(var(--bsz) * 4);
-  --gap-5: calc(var(--bsz) * 5);
-  --gap-6: calc(var(--bsz) * 6);
+  --gap-0: 0.875rem;
+  --gap-1: 1.125rem;
+  --gap-2: 1.375rem;
+  --gap-3: 1.625rem;
+  --gap-4: 1.875rem;
+  --gap-5: 2.125rem;
 
   color-scheme: light dark;
   color: var(--c--on-background);
